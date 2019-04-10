@@ -7,4 +7,4 @@ in_nums = list(map(int, input().split()))
 for _ in range(qr):
     u, v = map(int, input().split())
     st = sum(in_nums[u-1:v])
-    print(st)
+    print(st,end="\n")
