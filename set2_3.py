@@ -1,14 +1,8 @@
-import fractions
-num,q=input().split()
-num=int(num)
-q=int(q)
-if(num>=1 and num<=100000):
-    num=(list(map(int,input().split())))
-    for i in range(0,q):
-        j,k=input().split()
-        j=int(j)
-        k=int(k)
-        x=j-1
-        y=k-1
-        sum=0
-        print(min(num[x],num[y]))
+import sys, string, math
+num,k = input().split()
+num,k = int(num), int(k)
+L = [ int(x) for x in input().split()]
+for i in range(0,k) :
+     a,b = input().split()
+     a,b = int(a), int(b)
+     print(min(L[a-1:b]))
